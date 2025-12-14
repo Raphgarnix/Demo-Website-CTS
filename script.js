@@ -185,14 +185,21 @@ function showOverview(backButton) {
       <div class="service" onclick="showDetail('hardware')">
         <h3>Hardware</h3>
         <p>(Platzhalter)</p>
+        <p>(Beispiel-Bild)</p>
+        <p>(Kurze Erklärung)</p>
       </div>
       <div class="service" onclick="showDetail('software')">
         <h3>Software</h3>
         <p>(Platzhalter)</p>
+        <p>(Beispiel-Bild)</p>
+        <p>(Kurze Erklärung)</p>
       </div>
       <div class="service" onclick="showDetail('beratung')">
         <h3>Beratung</h3>
         <p>(Platzhalter)</p>
+        <p>(Beispiel-Bild)</p>
+        <p>(Kurze Erklärung)</p>
+
       </div>
     </div>
   </section>
@@ -203,6 +210,8 @@ function showOverview(backButton) {
     <h2>Warum wir?    <hr class="hl"></h2>
     <ul>
       <li>(Platzhalter)</li>
+      <li>(Wichtige eigene Informationen)</li>
+      <li>(Mögliches eigenes Bild)</li>
     </ul>
   </section>
 
