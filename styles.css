@@ -1,0 +1,319 @@
+/* Grundlayout */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #1e40af; /* Dunkelblau */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* leichter Schatten */
+}
+
+.btn-secondary {
+    background-color: #64748b; /* Grau-Blau */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* leichter Schatten */
+}
+
+/* Sektionen */
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hl {
+    max-width: 560px;
+    border: none;                  /* Entfernt Standard-Rand */
+    border-top: 2px solid #3e57ac; /* Linie und Farbe */
+    width: 70%;                    /* Linie fast über die ganze Seite */
+    margin: 10px auto;             /* Zentriert und Abstand oben/unten */
+    
+}
+
+
+
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* standard: 3 nebeneinander */
+    gap: 20px;
+}
+
+@media (max-width: 1000px) {  /* bei kleineren Fenstern */
+    .service-list {
+        grid-template-columns: 1fr; /* alle untereinander */
+    }
+}
+
+
+.service {
+    background-color: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* leichter Schatten */
+}
+
+/* Footer */
+footer {
+    background-color: #3e57ac;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#welcome , #about{
+    padding-bottom: 80px;
+}
+
+#services {
+    cursor: pointer ;
+    padding-top: 20px;
+    background-color: #f3f3f3;
+}
+
+#opening-hours{
+    border-radius: 16px;
+    margin-left: 20%;
+    padding-top: 20px;
+    background-color: #f3f3f3;
+    margin-right: 20%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* leichter Schatten */
+}
+
+
+.opening-hours {
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.opening-hours h2 {
+    text-align: center;
+    color: #64748b;
+}
+
+.opening-hours ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.opening-hours li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    margin-bottom: 10px; /* Abstand zwischen den Einträgen */
+    background-color: #f9fcff; /* Hintergrund nötig für Schatten */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* leichter Schatten */
+    border-radius: 10px; /* abgerundete Ecken */
+    gap: 10px;
+}
+
+
+.opening-hours li .closed {
+    color: #ff4d4d; /* Rot für geschlossene Tage */
+    font-weight: bold;
+}
+
+.opening-hours li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+
+
+
+#welcome {
+    max-width: 800px;
+    margin: 60px auto 0; /* gleiche Top-Padding wie andere Sektionen */
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+#welcome p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Zentrierung des Inhalts innerhalb der Sektionen */
+#about, #contact {
+    max-width: 800px;       /* optional: Breite begrenzen */
+    margin: 0 auto;         /* horizontal zentrieren */
+    text-align: center;     /* Text & Inline-Elemente zentrieren */
+}
+
+/* Listen innerhalb zentrieren, aber Punkte linksbündig */
+#about ul, #contact ul {
+    list-style-type: disc;
+    padding-left: 0;         /* Standardabstand entfernen */
+    display: inline-block;   /* Liste wird wie ein Block behandelt */
+    text-align: left;        /* Punkte linksbündig innerhalb der Liste */
+    margin: 0 auto;          /* Liste insgesamt zentrieren */
+}
+
+#about ul li, #contact ul li {
+    margin-bottom: 10px;
+}
+
+
+
+
+.fillwindow {
+    background-color: white; /* oder die gewünschte Farbe */
+    height: 230px;
+}
+
+
+
+.menu-container {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.menu-btn {
+    background-color: #64748b;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.menu-reiter {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #f0f4f8;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: none; /* versteckt standardmäßig */
+}
+
+.menu-reiter ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-reiter li {
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-reiter li:last-child {
+    border-bottom: none;
+}
+
+.menu-reiter li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-reiter li a:hover {
+    transform: translateY(-3px);
+    background-color: #64748b;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+strong {
+    color: #3e57ac;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #3e57ac;
+}
+
+.service h3 {
+    color: #3e57ac;
+    font-size: 1.8rem; /* oder 24px, je nach Wunsch */
+    font-weight: bold;
+}
+
+
+.hero {
+    background-color: #f0f4f8;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-title {
+  display: inline-block; /* alles kompakt */
+  text-align: left; /* für exakte Ausrichtung */
+  margin-top: 0px;
+}
+
+.hero-title .line {
+  display: flex;
+  align-items: baseline; /* Initiale und Rest auf gleicher Linie */
+}
+
+.hero-title .initial {
+  font-size: 3em;
+  color: #3e57ac;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.hero-title .rest {
+  font-size: 2em;
+  color: #333;
+  line-height: 1;
+  margin-left: 0.1em; /* Abstand zwischen Initiale und Rest */
+}
+
+/* Optional: Abstand zwischen den Zeilen steuern */
+.hero-title .line + .line {
+  margin-top: 0.1em; /* kleinere Lücke zwischen den Zeilen */
+}
+
+
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 10px;           /* links statt rechts */
+    z-index: 1000;
+
+    background-color: #64748b;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
