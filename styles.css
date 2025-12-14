@@ -51,19 +51,7 @@ h2 {
     gap: 20px;
 }
 
-@media (max-width: 1000px) {  /* bei kleineren Fenstern */
-    .service-list {
-        grid-template-columns: 1fr; /* alle untereinander */
-    }
-    #opening-hours{
-            border-radius: 16px;
-            margin-left: 10%;
-            padding-top: 20px;
-            background-color: #f3f3f3;
-            margin-right: 10%;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* leichter Schatten */
-    }
-}
+
 
 
 .service {
@@ -324,4 +312,20 @@ strong {
 .back-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+
+
+@media (max-width: 1000px) {  /* bei kleineren Fenstern */
+    .service-list {
+        grid-template-columns: 1fr; /* alle untereinander */
+    }
+    #opening-hours{
+            border-radius: 16px;
+            margin-left: 10%;
+            padding-top: 20px;
+            background-color: #f3f3f3;
+            margin-right: 10%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* leichter Schatten */
+    }
 }
