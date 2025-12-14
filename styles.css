@@ -55,6 +55,14 @@ h2 {
     .service-list {
         grid-template-columns: 1fr; /* alle untereinander */
     }
+    #opening-hours{
+            border-radius: 16px;
+            margin-left: 10%;
+            padding-top: 20px;
+            background-color: #f3f3f3;
+            margin-right: 10%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* leichter Schatten */
+    }
 }
 
 
